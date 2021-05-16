@@ -1,0 +1,24 @@
+<view class="blog-post">
+  <view class="blog-header">
+      <image class="avatar" src="{{avatarUrl}}"></image>
+    <view class="account-container">
+      <view class="nickname">{{nickname}}</view>
+      <view class="account">@{{account}}</view>
+    </view>
+  </view>
+  <view class="blog-content">{{content}}</view>
+  <view class="blog-footer">
+    <view bindtap="onLike">
+      <mp-icon icon="like" color="red" type="{{liked? 'field':'outline'}}"></mp-icon>
+      <text class="number">{{likes}}</text>
+    </view>
+    <view>
+      <mp-icon icon="comment"></mp-icon>
+      <text class="number">{{comments}}</text>
+    </view>
+    <view>
+      <mp-icon icon="share" color="green"></mp-icon>
+      <text class="number">{{shares}}</text>
+    </view>
+  </view>
+</view>

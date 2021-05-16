@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "blog-post": "/components/blog/blog",
+    "loading": "/weui-miniprogram/loading/loading",
+    "navigator": "/weui-miniprogram/navigation-bar/navigation-bar"
+  },
+  "navigationStyle": "custom"
 }

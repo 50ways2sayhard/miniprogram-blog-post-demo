@@ -1,0 +1,40 @@
+.blog-post {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 20rpx;
+}
+
+.account-container {
+  padding-left: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.blog-header {
+  display: flex;
+  padding: 2px;
+}
+
+.account {
+  color: gray;
+  font-size: 12px;
+}
+
+.blog-footer {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.number {
+  font-size: 12px;
+  color: grey;
+}
+
+.blog-content {
+  padding: 2px;
+}

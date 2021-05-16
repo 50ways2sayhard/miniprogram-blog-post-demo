@@ -1,6 +1,8 @@
 module.exports = Behavior({
   properties: {
+    postId: String,
     avatarUrl: String,
+    account: String,
     nickname: String,
     content: String,
     likes: Number,
@@ -10,6 +12,12 @@ module.exports = Behavior({
   },
 
   methods: {
-    onLike: function () {},
+    onLike: function () {
+      this.setData({ liked: !this.properties.liked });
+      this.triggerEvent("like", {
+        postId: this.properties.postId,
+        liked: this.properties.liked,
+      });
+    },
   },
 });
